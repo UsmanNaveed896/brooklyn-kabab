@@ -1,7 +1,6 @@
-// components/Header.jsx
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { FiPhone, FiMapPin, FiClock } from "react-icons/fi";
 import Img from "../../../public/1.png";
 import Image from "next/image";
@@ -9,11 +8,11 @@ import { usePathname } from "next/navigation";
 
 const Header = () => {
   const pathname = usePathname();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const baseLink =
     "text-black hover:text-orange-100 transition-colors duration-200 font-medium tracking-wide";
-  const active =
-    "bg-[#c98d45] text-white";
+  const active = "bg-[#c98d45] text-white";
 
   return (
     <div className="w-full" style={{ fontFamily: "unbounded" }}>
@@ -26,7 +25,7 @@ const Header = () => {
               <Image className="" src={Img} alt="logo" />
             </div>
 
-            {/* Navigation Menu */}
+            {/* Navigation Menu for desktop */}
             <nav className="hidden md:flex items-center space-x-2">
               <a
                 href="/"
@@ -68,7 +67,11 @@ const Header = () => {
 
             {/* Mobile Menu Button */}
             <div className="md:hidden">
-              <button className="text-white hover:text-orange-100 transition-colors">
+              <button
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="text-black hover:text-orange-100 transition-colors focus:outline-none"
+                aria-label="Toggle menu"
+              >
                 <svg
                   className="h-6 w-6"
                   fill="none"
@@ -85,6 +88,56 @@ const Header = () => {
               </button>
             </div>
           </div>
+
+          {/* Mobile Menu Items */}
+         {mobileMenuOpen && (
+  <div className="fixed inset-0 bg-white z-50 flex flex-col p-6">
+    <nav className="flex flex-col space-y-4">
+      <a
+        href="/"
+        className={`${baseLink} ${pathname === "/" ? active : ""} py-3 px-4 rounded`}
+        onClick={() => setMobileMenuOpen(false)}
+      >
+        HOME
+      </a>
+      <a
+        href="/about-us"
+        className={`${baseLink} ${pathname === "/about-us" ? active : ""} py-3 px-4 rounded`}
+        onClick={() => setMobileMenuOpen(false)}
+      >
+        ABOUT US
+      </a>
+      <a
+        href="/menu"
+        className={`${baseLink} ${pathname === "/menu" ? active : ""} py-3 px-4 rounded`}
+        onClick={() => setMobileMenuOpen(false)}
+      >
+        MENU
+      </a>
+      <a
+        href="/catering"
+        className={`${baseLink} ${pathname === "/catering" ? active : ""} py-3 px-4 rounded`}
+        onClick={() => setMobileMenuOpen(false)}
+      >
+        CATERING SERVICE
+      </a>
+      <a
+        href="/contact-us"
+        className={`${baseLink} ${pathname === "/contact-us" ? active : ""} py-3 px-4 rounded`}
+        onClick={() => setMobileMenuOpen(false)}
+      >
+        CONTACT US
+      </a>
+      <a
+        href="/order-online"
+        className={`${baseLink} ${pathname === "/order-online" ? active : ""} py-3 px-4 rounded`}
+        onClick={() => setMobileMenuOpen(false)}
+      >
+        ORDER ONLINE
+      </a>
+    </nav>
+  </div>
+)}
         </div>
       </div>
     </div>
