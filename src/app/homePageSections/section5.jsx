@@ -98,7 +98,7 @@ const Section5 = () => {
                     name="date"
                     value={formData.date}
                     onChange={handleInputChange}
-                    className="w-full pl-12 pr-4 py-3 sm:py-4 bg-white text-gray-800 border-none rounded-none text-base sm:text-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
+                    className="md:w-full w-[400px] pl-12 pr-4 py-3 sm:py-4 bg-white text-gray-800 border-none rounded-none text-base sm:text-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
                   />
                 </div>
                 <div className="relative">
@@ -109,7 +109,7 @@ const Section5 = () => {
                     placeholder="07:00 PM"
                     value={formData.time}
                     onChange={handleInputChange}
-                    className="w-full pl-12 pr-4 py-3 sm:py-4 bg-white text-gray-800 placeholder-gray-500 border-none rounded-none text-base sm:text-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
+                    className="md:w-full w-[400px] pl-12 pr-4 py-3 sm:py-4 bg-white text-gray-800 placeholder-gray-500 border-none rounded-none text-base sm:text-lg focus:outline-none focus:ring-2 focus:ring-amber-500"
                   />
                 </div>
               </div>

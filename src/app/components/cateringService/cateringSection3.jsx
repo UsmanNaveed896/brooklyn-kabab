@@ -149,7 +149,7 @@ const CateringSection3 = () => {
                 placeholder="dd/mm/yyyy"
                 value={formData.date}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-white text-gray-900 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-amber-500"
+                className="md:w-full w-[400px] px-4 py-3 bg-white text-gray-900 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-amber-500"
               />
             </div>
 

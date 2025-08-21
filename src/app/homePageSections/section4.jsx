@@ -17,7 +17,7 @@ const Section4 = () => {
       }}
     >
       <div
-        className="relative z-10 pt-16 pb-32 bg-no-repeat bg-cover"
+        className="relative z-10 pt-16 pb-32 md:px-12 bg-no-repeat bg-cover"
         style={{ backgroundImage: `url(${Img1.src})` }}
       >
         {/* Title */}
@@ -28,15 +28,15 @@ const Section4 = () => {
         {/* Food Items Grid */}
         <div className="flex md:flex-row flex-col justify-center gap-8 md:gap-6">
           {/* Mix Grill */}
-          <div className="flex flex-col items-center w-full md:w-52 lg:w-56">
+          <div className="flex flex-col items-center w-full md:w-52 lg:w-[400px]">
             <div className="relative overflow-hidden rounded-lg shadow-md">
               <Image
                 src={Img2}
                 alt="Mix Grill"
                 width={250}
                 height={200}
-                className="object-cover w-full h-[250px] md:h-[200px]"
-                s
+                className="object-cover w-[250px] h-[250px] md:h-[300px] md:w-[350px]"
+                
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
             </div>
@@ -46,14 +46,14 @@ const Section4 = () => {
           </div>
 
           {/* Falafel */}
-          <div className="flex flex-col items-center  w-full md:w-52 lg:w-56">
+          <div className="flex flex-col items-center  w-full md:w-52 lg:w-[400px]">
             <div className="relative overflow-hidden rounded-lg shadow-md">
               <Image
                 src={Img3}
                 alt="Falafel"
                 width={224}
                 height={160}
-                className="object-cover w-full h-[250px] md:h-[200px]"
+                className="object-cover w-[250px] h-[250px] md:h-[300px] md:w-[350px]"
                
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
@@ -64,14 +64,14 @@ const Section4 = () => {
           </div>
 
           {/* Massloug Lamb */}
-          <div className="flex flex-col items-center  w-full md:w-52 lg:w-56">
+          <div className="flex flex-col items-center  w-full md:w-52 lg:w-[400px]">
             <div className="relative overflow-hidden rounded-lg shadow-md">
               <Image
                 src={Img4}
                 alt="Massloug Lamb"
                 width={224}
                 height={160}
-                className="object-cover w-full h-[250px] md:h-[200px]"
+                className="object-cover w-[250px] h-[250px] md:h-[300px] md:w-[350px]"
                 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
@@ -82,15 +82,14 @@ const Section4 = () => {
           </div>
 
           {/* Baba Ghanoush */}
-          <div className="flex flex-col items-center  w-full md:w-52 lg:w-56">
+          <div className="flex flex-col items-center  w-full md:w-58 lg:w-[400px]">
             <div className="relative overflow-hidden rounded-lg shadow-md">
               <Image
                 src={Img5}
                 alt="Baba Ghanoush"
-                width={224}
-                height={160}
-                className="object-cover w-full h-[250px] md:h-[200px]"
-                sizes="(max-width: 640px) 144px, (max-width: 768px) 176px, (max-width: 1024px) 208px, 224px"
+               
+                className="object-cover   w-[250px] h-[250px] md:h-[300px] md:w-[350px]"
+             
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
             </div>

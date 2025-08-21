@@ -31,7 +31,7 @@ const Section6 = () => {
               alt="Hummus"
               width={300}
               height={200}
-              className="object-cover w-full md:w-[400px] h-[290px]"
+              className="object-cover w-[250px] h-[250px] md:h-[300px] md:w-[400px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
@@ -45,7 +45,7 @@ const Section6 = () => {
               alt="Kebab"
               width={300}
               height={200}
-              className="object-cover w-full md:w-[400px] h-[290px]"
+              className="object-cover w-[250px] h-[250px] md:h-[300px] md:w-[400px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
@@ -59,7 +59,7 @@ const Section6 = () => {
               alt="Shawarma"
               width={300}
               height={200}
-              className="object-cover w-full md:w-[400px] h-[290px]"
+              className="object-cover w-[250px] h-[250px] md:h-[300px] md:w-[400px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
