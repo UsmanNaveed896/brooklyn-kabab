@@ -1,9 +1,21 @@
-import React from 'react'
+import React from "react";
 import Img from "../../../../public/34.png";
+import Img1 from "../../../../public/47.png";
+import Img2 from "../../../../public/48.png";
+
+import Image from "next/image";
 
 const OrderSection1 = () => {
   return (
-    <div
+    <>
+      <div>
+        <Image
+          className="w-full md:hidden block bg-black"
+          src={Img1}
+          alt="left"
+        />
+      </div>
+      <div
         className="min-h-[400px] w-full bg-center"
         style={{
           backgroundImage: `url(${Img.src})`,
@@ -15,11 +27,18 @@ const OrderSection1 = () => {
             <h1 className="text-xl pt-36 md:text-3xl md:text-start text-center lg:text-5xl font-semibold leading-tight tracking-tight mb-6 text-white">
               ORDER ONLINE
             </h1>
-           
           </div>
         </div>
       </div>
-  )
-}
+      <div>
+        <Image
+          className="w-full md:hidden block bg-black"
+          src={Img1}
+          alt="left"
+        />
+      </div>
+    </>
+  );
+};
 
-export default OrderSection1
+export default OrderSection1;

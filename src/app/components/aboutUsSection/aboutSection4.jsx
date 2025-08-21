@@ -4,28 +4,28 @@ import Img1 from "../../../../public/6.png";
 import Img2 from "../../../../public/27.png";
 import Img3 from "../../../../public/28.png";
 import Img4 from "../../../../public/29.png";
+import Img5 from "../../../../public/47.png";
+import Img6 from "../../../../public/48.png";
+
 import Image from "next/image";
 
 const AboutSection4 = () => {
   return (
-    <div className="main relative bg-black/70 md:bg-white" style={{ fontFamily: "unbounded" }}>
+    <div
+      className="main relative  md:bg-white"
+      style={{ fontFamily: "unbounded" }}
+    >
       <div className="justify-between absolute w-full hidden md:flex">
-        <Image
-          src={Img}
-          alt="left"
-          
-        />
-        <Image
-          src={Img1}
-          alt="left"
-          
-        />
+        <Image src={Img} alt="left" />
+        <Image src={Img1} alt="left" />
       </div>
-
+      <div>
+        <Image className="w-full md:hidden block" src={Img5} alt="left" />
+      </div>
       {/* Content */}
       <div className="relative z-10 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 w-full pb-12 sm:pb-16 pt-14 sm:pt-20 px-3 sm:px-4">
         {/* Hummus Section */}
-        <div className="flex-1 max-w-[260px] sm:max-w-xs text-center">
+        <div className="flex flex-col items-center w-full md:w-52 lg:w-56">
           <div className="relative overflow-hidden rounded-lg shadow-lg">
             <Image
               src={Img2}
@@ -33,7 +33,7 @@ const AboutSection4 = () => {
               width={300}
               height={200}
               sizes="(max-width: 640px) 90vw, (max-width: 1024px) 33vw, 300px"
-              className="object-cover w-full h-[250x] h-44 sm:h-56 md:h-64 lg:h-72 xl:h-80"
+              className="object-cover  w-full h-[250px] md:h-[200px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
@@ -43,7 +43,7 @@ const AboutSection4 = () => {
         </div>
 
         {/* Kebab Section */}
-        <div className="flex-1 max-w-[260px] sm:max-w-xs text-center">
+        <div className="flex flex-col items-center w-full md:w-52 lg:w-56">
           <div className="relative overflow-hidden rounded-lg shadow-lg">
             <Image
               src={Img3}
@@ -51,7 +51,7 @@ const AboutSection4 = () => {
               width={300}
               height={200}
               sizes="(max-width: 640px) 90vw, (max-width: 1024px) 33vw, 300px"
-              className="object-cover w-full h-[250x] h-44 sm:h-56 md:h-64 lg:h-72 xl:h-80"
+              className="object-cover w-full h-[250px] md:h-[200px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
@@ -61,7 +61,7 @@ const AboutSection4 = () => {
         </div>
 
         {/* Shawarma Section */}
-        <div className="flex-1 max-w-[260px] sm:max-w-xs text-center">
+        <div className="flex flex-col items-center w-full md:w-52 lg:w-56">
           <div className="relative overflow-hidden rounded-lg shadow-lg">
             <Image
               src={Img4}
@@ -69,7 +69,7 @@ const AboutSection4 = () => {
               width={300}
               height={200}
               sizes="(max-width: 640px) 90vw, (max-width: 1024px) 33vw, 300px"
-              className="object-cover w-full h-[250x] h-44 sm:h-56 md:h-64 lg:h-72 xl:h-80"
+              className="object-cover w-full h-[250px] md:h-[200px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
@@ -77,6 +77,10 @@ const AboutSection4 = () => {
             Turkish Yemeni Fusion
           </div>
         </div>
+      </div>
+
+         <div>
+        <Image className="w-full md:hidden block" src={Img6} alt="left" />
       </div>
     </div>
   );

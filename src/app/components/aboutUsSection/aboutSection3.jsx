@@ -18,18 +18,18 @@ const AboutSection3 = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center">
         {/* Left content */}
         <div className="lg:col-span-7">
-          <h2 className="text-white text-base sm:text-lg md:text-2xl leading-tight tracking-wide text-center lg:text-left">
+          <h2 className="text-white text-base sm:text-lg md:text-2xl leading-tight tracking-wide  lg:text-left">
             OUR RESTAURANT
           </h2>
 
           <p
-            className="text-[#d6a062] text-2xl sm:text-[26px] md:text-[32px] mt-1 text-center lg:text-left"
+            className="text-[#d6a062] text-2xl sm:text-[26px] md:text-[32px] mt-1  lg:text-left"
             style={{ fontFamily: "alura" }}
           >
             Cozy & Romantic
           </p>
 
-          <div className="h-[3px] w-10 sm:w-12 bg-[#d6a062] mt-4 mb-6 mx-auto lg:mx-0" />
+          <div className="h-[3px] w-10 sm:w-12 bg-[#d6a062] mt-4 mb-6 lg:mx-0" />
 
           <div className="space-y-4 text-[#cfcfcf] leading-7 md:leading-8 text-[15px] md:text-[16px] text-center lg:text-left px-1 sm:px-0">
             <p>

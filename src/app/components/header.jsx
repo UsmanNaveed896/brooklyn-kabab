@@ -2,7 +2,9 @@
 
 import React, { useState } from "react";
 import { FiPhone, FiMapPin, FiClock } from "react-icons/fi";
-import Img from "../../../public/1.png";
+import Img from "../../../public/50.png";
+import Img1 from "../../../public/46.png";
+
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
@@ -22,44 +24,58 @@ const Header = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo Section */}
             <div className="">
-              <Image className="" src={Img} alt="logo" />
+              <Image className="hidden md:block h-[60px] w-[60px]" src={Img} alt="logo" />
+              <Image className="block md:hidden" src={Img1} alt="Mobile logo" />
+
             </div>
 
             {/* Navigation Menu for desktop */}
             <nav className="hidden md:flex items-center space-x-2">
               <a
                 href="/"
-                className={`${baseLink} ${pathname === "/" ? active : ""} py-12 px-3`}
+                className={`${baseLink} ${
+                  pathname === "/" ? active : ""
+                } py-12 px-3`}
               >
                 HOME
               </a>
               <a
                 href="/about-us"
-                className={`${baseLink} ${pathname === "/about-us" ? active : ""} py-5 px-1`}
+                className={`${baseLink} ${
+                  pathname === "/about-us" ? active : ""
+                } py-5 px-1`}
               >
                 ABOUT US
               </a>
               <a
                 href="/menu"
-                className={`${baseLink} ${pathname === "/menu" ? active : ""} py-7 px-2`}
+                className={`${baseLink} ${
+                  pathname === "/menu" ? active : ""
+                } py-7 px-2`}
               >
                 MENU
               </a>
               <a
                 href="/catering"
-                className={`${baseLink} ${pathname === "/catering" ? active : ""} py-7 px-2`}
+                className={`${baseLink} ${
+                  pathname === "/catering" ? active : ""
+                } py-7 px-2`}
               >
                 CATERING SERVICE
               </a>
               <a
                 href="/contact-us"
-                className={`${baseLink} ${pathname === "/contact-us" ? active : ""} py-7 px-2`}
+                className={`${baseLink} ${
+                  pathname === "/contact-us" ? active : ""
+                } py-7 px-2`}
               >
                 CONTACT US
               </a>
               <a
                 href="/order-online"
-                className={`${baseLink} ${pathname === "/order-online" ? active : ""} py-7 px-2`}
+                className={`${baseLink} ${
+                  pathname === "/order-online" ? active : ""
+                } py-7 px-2`}
               >
                 ORDER ONLINE
               </a>
@@ -90,54 +106,66 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Items */}
-         {mobileMenuOpen && (
-  <div className="fixed inset-0 bg-white z-50 flex flex-col p-6">
-    <nav className="flex flex-col space-y-4">
-      <a
-        href="/"
-        className={`${baseLink} ${pathname === "/" ? active : ""} py-3 px-4 rounded`}
-        onClick={() => setMobileMenuOpen(false)}
-      >
-        HOME
-      </a>
-      <a
-        href="/about-us"
-        className={`${baseLink} ${pathname === "/about-us" ? active : ""} py-3 px-4 rounded`}
-        onClick={() => setMobileMenuOpen(false)}
-      >
-        ABOUT US
-      </a>
-      <a
-        href="/menu"
-        className={`${baseLink} ${pathname === "/menu" ? active : ""} py-3 px-4 rounded`}
-        onClick={() => setMobileMenuOpen(false)}
-      >
-        MENU
-      </a>
-      <a
-        href="/catering"
-        className={`${baseLink} ${pathname === "/catering" ? active : ""} py-3 px-4 rounded`}
-        onClick={() => setMobileMenuOpen(false)}
-      >
-        CATERING SERVICE
-      </a>
-      <a
-        href="/contact-us"
-        className={`${baseLink} ${pathname === "/contact-us" ? active : ""} py-3 px-4 rounded`}
-        onClick={() => setMobileMenuOpen(false)}
-      >
-        CONTACT US
-      </a>
-      <a
-        href="/order-online"
-        className={`${baseLink} ${pathname === "/order-online" ? active : ""} py-3 px-4 rounded`}
-        onClick={() => setMobileMenuOpen(false)}
-      >
-        ORDER ONLINE
-      </a>
-    </nav>
-  </div>
-)}
+          {mobileMenuOpen && (
+            <div className="fixed inset-0 bg-white z-50 flex flex-col p-6">
+              <nav className="flex flex-col space-y-4">
+                <a
+                  href="/"
+                  className={`${baseLink} ${
+                    pathname === "/" ? active : ""
+                  } py-3 px-4 rounded`}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  HOME
+                </a>
+                <a
+                  href="/about-us"
+                  className={`${baseLink} ${
+                    pathname === "/about-us" ? active : ""
+                  } py-3 px-4 rounded`}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  ABOUT US
+                </a>
+                <a
+                  href="/menu"
+                  className={`${baseLink} ${
+                    pathname === "/menu" ? active : ""
+                  } py-3 px-4 rounded`}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  MENU
+                </a>
+                <a
+                  href="/catering"
+                  className={`${baseLink} ${
+                    pathname === "/catering" ? active : ""
+                  } py-3 px-4 rounded`}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  CATERING SERVICE
+                </a>
+                <a
+                  href="/contact-us"
+                  className={`${baseLink} ${
+                    pathname === "/contact-us" ? active : ""
+                  } py-3 px-4 rounded`}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  CONTACT US
+                </a>
+                <a
+                  href="/order-online"
+                  className={`${baseLink} ${
+                    pathname === "/order-online" ? active : ""
+                  } py-3 px-4 rounded`}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  ORDER ONLINE
+                </a>
+              </nav>
+            </div>
+          )}
         </div>
       </div>
     </div>

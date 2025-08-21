@@ -1,6 +1,8 @@
 import React from "react";
 import Img from "../../../../public/23.png";
 import Img1 from "../../../../public/1.png";
+import Img2 from "../../../../public/50.png";
+import Img3 from "../../../../public/51.png";
 
 import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 import Image from "next/image";
@@ -27,17 +29,23 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
             {/* Left side - Copyright */}
             <div className="text-gray-300 text-sm md:text-base text-center md:text-left">
-              <p>© Copyright Brooklyn Kebab House Designed & Hosted By</p>
-              <p className="mt-1">ManagingXpert</p>
+              <p>© Copyright Brooklyn Kebab House Inc</p>
             </div>
 
             {/* Center - Logo */}
             <div className="flex items-center justify-center">
               <div className="flex items-center space-x-3">
                 {/* Company name */}
-                <Image src={Img1} alt="abc" />
+                <Image className="hidden md:block " src={Img3} alt="abc" />
+                <Image className="hidden md:block " src={Img2} alt="abc" />
+                <Image
+                  className="block md:hidden h-[150px] w-[150px]"
+                  src={Img2}
+                  alt="abc"
+                />
               </div>
             </div>
+            <Image className="block md:hidden " src={Img3} alt="abc" />
 
             {/* Right side - Social media icons */}
             <div className="flex space-x-4">

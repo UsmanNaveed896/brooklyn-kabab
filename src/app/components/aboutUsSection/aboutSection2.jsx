@@ -23,7 +23,7 @@ const AboutSection2 = () => {
     </div>
     <div className="column2 text-white w-full md:w-auto">
       <h1 className="text-xl sm:text-2xl lg:text-3xl pb-3 sm:pb-4 uppercase">
-        Welcome To Brooklyn Kabab House
+        About Brooklyn Kabab House
       </h1>
       <p
         className="text-xl sm:text-2xl text-[#C98D45] pb-3 sm:pb-4"
