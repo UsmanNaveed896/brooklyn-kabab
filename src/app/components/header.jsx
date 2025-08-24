@@ -21,7 +21,7 @@ const Header = () => {
       {/* Header */}
       <div className="bg-white shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center h-20 gap-36">
+          <div className="flex items-center md:justify-center justify-between h-20 md:gap-36">
             {/* Logo Section */}
             <div className="">
               <Image
