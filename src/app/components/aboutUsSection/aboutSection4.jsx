@@ -11,74 +11,62 @@ import Image from "next/image";
 
 const AboutSection4 = () => {
   return (
-    <div
-      className="main relative  md:bg-white"
-      style={{ fontFamily: "unbounded" }}
-    >
+    <div className="main relative bg-white" style={{ fontFamily: "unbounded" }}>
       <div className="justify-between absolute w-full hidden md:flex">
-        <Image src={Img} alt="left" />
+        <Image className="" src={Img} alt="left" />
         <Image src={Img1} alt="left" />
       </div>
       <div>
         <Image className="w-full md:hidden block" src={Img5} alt="left" />
       </div>
       {/* Content */}
-      <div className="relative z-10 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 w-full pb-12 sm:pb-16 pt-14 sm:pt-20 px-3 sm:px-4">
+      <div className="relative z-10 flex flex-col sm:flex-row justify-center items-center  gap-6 w-full pb-12 pt-20  px-4">
         {/* Hummus Section */}
-        <div className="flex flex-col items-center w-full md:w-52 lg:w-[400px]">
-          <div className="relative overflow-hidden rounded-lg shadow-lg">
+
+        <div className="flex-1 md:max-w-sm max-w-full text-center">
+          <div className="relative overflow-hidden  shadow-lg">
             <Image
               src={Img2}
               alt="Hummus"
-              width={300}
-              height={200}
-            
-              className="object-cover  w-[250px] h-[250px] md:h-[300px] md:w-[400px]"
+              className="object-cover md:w-[400px] h-[290px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-          </div>
-          <div className="mt-2 bg-yellow-600 text-white font-bold py-1.5 sm:py-2 px-3 sm:px-4 rounded-b-lg shadow-md text-sm sm:text-base">
-            Yemeni Food
+            <div className= "uppercase absolute bottom-0 left-0 right-0 bg-[#c98d45]/60 text-white font-normal py-3 px-4 text-center">
+               Yemeni Food
+            </div>
           </div>
         </div>
 
         {/* Kebab Section */}
-        <div className="flex flex-col items-center w-full md:w-52 lg:w-[400px]">
-          <div className="relative overflow-hidden rounded-lg shadow-lg">
+        <div className="flex-1 md:max-w-sm max-w-full text-center">
+         <div className="relative overflow-hidden  shadow-lg">
             <Image
               src={Img3}
-              alt="Kebab"
-              width={300}
-              height={200}
-              
-              className="object-cover w-[250px] h-[250px] md:h-[300px] md:w-[400px]"
+              alt="Hummus"
+              className="object-cover md:w-[400px] h-[290px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-          </div>
-          <div className="mt-2 bg-yellow-600 text-white font-bold py-1.5 sm:py-2 px-3 sm:px-4 rounded-b-lg shadow-md text-sm sm:text-base">
-            Turkish Food
+            <div className="absolute uppercase bottom-0 left-0 right-0 bg-[#c98d45]/60 text-white font-normal py-3 px-4 text-center">
+                Turkish Food
+            </div>
           </div>
         </div>
 
         {/* Shawarma Section */}
-        <div className="flex flex-col items-center w-full md:w-52 lg:w-[400px]">
-          <div className="relative overflow-hidden rounded-lg shadow-lg">
+        <div className="flex-1 md:max-w-sm max-w-full text-center">
+         <div className="relative overflow-hidden  shadow-lg">
             <Image
               src={Img4}
-              alt="Shawarma"
-              width={300}
-              height={200}
-             
-              className="object-cover w-[250px] h-[250px] md:h-[300px] md:w-[400px]"
+              alt="Hummus"
+              className="object-cover md:w-[400px] h-[290px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-          </div>
-          <div className="mt-2 bg-yellow-600 text-white font-bold py-1.5 sm:py-2 px-3 sm:px-4 rounded-b-lg shadow-md text-sm sm:text-base">
-            Turkish Yemeni Fusion
+            <div className="absolute uppercase bottom-0 left-0 right-0 bg-[#c98d45]/60 text-white font-normal py-3 px-4 text-center">
+               Turkish Yemeni Fusion
+            </div>
           </div>
         </div>
       </div>
-
       <div>
         <Image className="w-full md:hidden block" src={Img6} alt="left" />
       </div>

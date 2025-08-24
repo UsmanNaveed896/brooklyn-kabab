@@ -28,73 +28,62 @@ const Section4 = () => {
         {/* Food Items Grid */}
         <div className="flex md:flex-row flex-col justify-center gap-8 md:gap-6">
           {/* Mix Grill */}
-          <div className="flex flex-col items-center w-full md:w-52 lg:w-[400px]">
-            <div className="relative overflow-hidden rounded-lg shadow-md">
+          <div className="flex flex-col items-center w-full md:w-52 lg:w-[500px]">
+            <div className="relative overflow-hidden  shadow-lg">
               <Image
                 src={Img2}
-                alt="Mix Grill"
-                width={250}
-                height={200}
-                className="object-cover w-[250px] h-[250px] md:h-[300px] md:w-[350px]"
-                
+                alt="Hummus"
+                className="object-cover md:w-[400px] h-[290px]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-            </div>
-            <div className="mt-2 bg-yellow-700/80 text-white py-1 px-3 rounded-b-md text-center uppercase text-xs sm:text-sm md:text-base">
-              Mix Grill
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 bg-[#c98d45]/60 text-white font-normal py-3 px-4 text-center">
+                Mix GRILL
+              </div>
             </div>
           </div>
 
           {/* Falafel */}
-          <div className="flex flex-col items-center  w-full md:w-52 lg:w-[400px]">
-            <div className="relative overflow-hidden rounded-lg shadow-md">
+          <div className="flex flex-col items-center  w-full md:w-52 lg:w-[500px]">
+            <div className="relative overflow-hidden  shadow-lg">
               <Image
                 src={Img3}
-                alt="Falafel"
-                width={224}
-                height={160}
-                className="object-cover w-[250px] h-[250px] md:h-[300px] md:w-[350px]"
-               
+                alt="FLAFEL"
+                className="object-cover md:w-[400px] h-[290px]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-            </div>
-            <div className="mt-2 bg-yellow-700/80 text-white py-1 px-3 rounded-b-md text-center uppercase text-xs sm:text-sm md:text-base">
-              Falafel
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 bg-[#c98d45]/60 text-white font-normal py-3 px-4 text-center">
+                FALAFEL
+              </div>
             </div>
           </div>
 
           {/* Massloug Lamb */}
-          <div className="flex flex-col items-center  w-full md:w-52 lg:w-[400px]">
-            <div className="relative overflow-hidden rounded-lg shadow-md">
+          <div className="flex flex-col items-center  w-full md:w-52 lg:w-[500px]">
+            <div className="relative overflow-hidden  shadow-lg">
               <Image
-                src={Img4}
-                alt="Massloug Lamb"
-                width={224}
-                height={160}
-                className="object-cover w-[250px] h-[250px] md:h-[300px] md:w-[350px]"
-                
+                src={Img3}
+                alt="MASSLOUG LAMB"
+                className="object-cover md:w-[400px] h-[290px]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-            </div>
-            <div className="mt-2 bg-yellow-700/80 text-white py-1 px-3 rounded-b-md text-center uppercase text-xs sm:text-sm md:text-base">
-              Massloug Lamb
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 bg-[#c98d45]/60 text-white font-normal py-3 px-4 text-center">
+                MASSLOUG LAMB
+              </div>
             </div>
           </div>
 
           {/* Baba Ghanoush */}
-          <div className="flex flex-col items-center  w-full md:w-58 lg:w-[400px]">
-            <div className="relative overflow-hidden rounded-lg shadow-md">
+          <div className="flex flex-col items-center  w-full md:w-58 lg:w-[500px]">
+            <div className="relative overflow-hidden  shadow-lg">
               <Image
                 src={Img5}
-                alt="Baba Ghanoush"
-               
-                className="object-cover   w-[250px] h-[250px] md:h-[300px] md:w-[350px]"
-             
+                alt=" BABAGHANOUSH"
+                className="object-cover md:w-[400px] h-[290px]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-            </div>
-            <div className="mt-2 bg-yellow-700/80 text-white py-1 px-3 rounded-b-md text-center uppercase text-xs sm:text-sm md:text-base">
-              Baba Ghanoush
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 bg-[#c98d45]/60 text-white font-normal py-3 px-4 text-center">
+                BABA GHANOUSH
+              </div>
             </div>
           </div>
         </div>

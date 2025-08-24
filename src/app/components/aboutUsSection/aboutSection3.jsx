@@ -7,7 +7,7 @@ import Image from "next/image";
 const AboutSection3 = () => {
   return (
   <div
-  className="bg-center bg-no-repeat bg-cover px-4 sm:px-8 md:px-12 lg:px-20 xl:px-28 py-10 sm:py-14 md:py-20 lg:py-24 xl:py-28"
+  className="relative bg-center bg-no-repeat bg-cover px-4 sm:px-8 md:px-12 lg:px-20 xl:px-28 py-10 sm:py-14 md:py-20 lg:py-24 xl:py-28"
   style={{
     backgroundImage: `url(${Img.src})`,
     fontFamily: "unbounded",
@@ -49,7 +49,7 @@ const AboutSection3 = () => {
 
           <div className="flex justify-center lg:justify-start">
             <button
-              className="mt-8 inline-flex items-center gap-2 rounded-md bg-[#C98D45] hover:bg-[#b6763e] transition-colors text-white tracking-[0.15em] text-xs sm:text-sm px-5 sm:px-6 py-2.5 sm:py-3"
+              className="mt-8 inline-flex items-center gap-2  bg-[#C98D45] hover:bg-[#b6763e] transition-colors text-white tracking-[0.15em] text-xs sm:text-sm px-5 sm:px-6 py-2.5 sm:py-3"
               type="button"
             >
               READ MORE

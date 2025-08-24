@@ -6,10 +6,16 @@ import Carousel1 from "../../../public/2.webp";
 import Carousel2 from "../../../public/3.webp";
 import carousel3 from "../../../public/4.webp";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
 
 const Section1 = () => {
+  const router = useRouter();
   return (
-    <section className="relative overflow-hidden" style={{fontFamily:"unbounded"}}>
+    <section
+      className="relative overflow-hidden"
+      style={{ fontFamily: "unbounded" }}
+    >
       {/* Carousel as Background */}
       <Carousel
         showArrows={false}
@@ -86,22 +92,25 @@ const Section1 = () => {
       </div>
 
       {/* Main Content - Better mobile spacing */}
-     <div className="relative z-10 m-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-20 min-h-[50vh] sm:min-h-[60vh] md:min-h-[80vh] lg:min-h-screen flex items-center justify-center">
-  <div>
-    {/* Left Content */}
-    <div className="text-white text-center">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-semibold leading-tight tracking-widest">
-        ENJOY YOUR FOOD
-      </h1>
+      <div className="relative z-[9] m-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-20 min-h-[50vh] sm:min-h-[60vh] md:min-h-[80vh] lg:min-h-screen flex items-center justify-center">
+        <div>
+          {/* Left Content */}
+          <div className="text-white text-center">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-normal leading-tight tracking-widest">
+              ENJOY YOUR FOOD
+            </h1>
 
-      <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 sm:pt-6 justify-center">
-        <button className="bg-[#ebb050] text-black px-6 py-3 rounded-xl font-bold text-sm hover:bg-yellow-600 transition-all shadow-lg">
-          Order Now
-        </button>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 sm:pt-6 justify-center">
+              <button
+                onClick={() => router.push("/menu")}
+                className="bg-[#C98D45] cursor-pointer text-white px-6 py-3  font-normal text-sm hover:bg-yellow-600 transition-all shadow-lg"
+              >
+                View Menu
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
     </section>
   );
 };

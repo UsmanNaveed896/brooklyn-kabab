@@ -21,7 +21,7 @@ const Section5 = () => {
   };
   return (
     <div
-      className="relative min-h-screen bg-gray-900 overflow-hidden"
+      className="relative min-h-screen bg-gray-900 overflow-hidden py-16"
       style={{ fontFamily: "unbounded" }}
     >
       {/* Geometric chevron pattern background */}
@@ -34,8 +34,24 @@ const Section5 = () => {
 
       <div className="relative z-10 flex items-center justify-center min-h-screen p-4">
         <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
+          {/* Right side - Call to Action */}
+          <div className="lg:flex lg:items-center lg:justify-center order-1 md:order-1">
+            <div className="mt-6 lg:mt-0 border-2 border-[#C98D45] p-5 sm:p-8 lg:p-12 bg-gray-800/60 backdrop-blur-sm">
+              <div className="text-center space-y-4 sm:space-y-6">
+                <h2 className="text-white text-lg sm:text-xl lg:text-[24px] font-light uppercase tracking-wider">
+                  Like To Book A Table?
+                </h2>
+                <div className="text-[#C98D45] text-xl sm:text-2xl lg:text-[40px] font-bold tracking-wide">
+                  CALL AHEAD (929) 292-2001
+                </div>
+              </div>
+            </div>
+          </div>
           {/* Left side - Reservation Form */}
-          <div className="space-y-5 sm:space-y-6 order-2 md:order-2">
+          <div
+            className="space-y-5 sm:space-y-3 order-2 md:order-2"
+            style={{ fontFamily: "sans-serif" }}
+          >
             {/* Reserve label */}
             <div
               className="text-amber-500 italic text-2xl sm:text-3xl font-light"
@@ -45,7 +61,10 @@ const Section5 = () => {
             </div>
 
             {/* Title */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+            <h1
+              className="text-4xl sm:text-5xl lg:text-[40px] font-normal text-white leading-tight"
+              style={{ fontFamily: "unbounded" }}
+            >
               Book A Table
             </h1>
 
@@ -127,23 +146,9 @@ const Section5 = () => {
               </div>
 
               {/* Submit button */}
-              <button className="bg-[#C98D45] hover:bg-amber-700 text-white font-normal px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg transition-colors duration-300 transform hover:scale-105">
+              <button className="bg-[#C98D45] hover:bg-amber-700 text-white font-normal px-6 sm:px-8 py-3 sm:py-4  text-base sm:text-lg transition-colors duration-300 transform hover:scale-105">
                 Confirm Reservation
               </button>
-            </div>
-          </div>
-
-          {/* Right side - Call to Action */}
-          <div className="lg:flex lg:items-center lg:justify-center order-1 md:order-1">
-            <div className="mt-6 lg:mt-0 border-2 border-[#C98D45] p-5 sm:p-8 lg:p-12 bg-gray-800/60 backdrop-blur-sm">
-              <div className="text-center space-y-4 sm:space-y-6">
-                <h2 className="text-white text-lg sm:text-xl lg:text-2xl font-light uppercase tracking-wider">
-                  Like To Book A Table?
-                </h2>
-                <div className="text-[#C98D45] text-xl sm:text-2xl lg:text-3xl font-bold tracking-wide">
-                  CALL AHEAD (929) 292-2001
-                </div>
-              </div>
             </div>
           </div>
         </div>

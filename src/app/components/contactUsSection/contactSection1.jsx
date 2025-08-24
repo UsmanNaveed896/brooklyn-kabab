@@ -23,7 +23,7 @@ const ContactSection1 = () => {
       >
         <div className="flex justify-center items-center ">
           <div>
-            <h1 className="text-xl pt-36 md:text-3xl md:text-start text-center lg:text-5xl font-semibold leading-tight tracking-tight mb-6 text-white">
+            <h1 className="text-xl pt-36 md:text-3xl md:text-start text-center lg:text-5xl font-semibold leading-tight tracking-widest mb-6 text-white">
               Contact Us
             </h1>
           </div>

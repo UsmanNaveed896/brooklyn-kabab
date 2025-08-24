@@ -22,46 +22,46 @@ const Section6 = () => {
         <Image className="w-full md:hidden block" src={Img5} alt="left" />
       </div>
       {/* Content */}
-      <div className="relative z-10 flex flex-col sm:flex-row justify-center items-center  gap-6 w-full pb-16 pt-20  px-4">
+      <div className="relative z-10 flex flex-col sm:flex-row justify-center items-center  gap-2 w-full pb-16 pt-20  px-4">
         {/* Hummus Section */}
-        <div className="flex-1 md:max-w-sm max-w-full text-center">
-          <div className="relative overflow-hidden rounded-lg shadow-lg">
+        <div className="flex-1 md:max-w-[330px] max-w-full text-center">
+          <div className="relative overflow-hidden ">
             <Image
               src={Img2}
               alt="Hummus"
               width={300}
               height={200}
-              className="object-cover w-[250px] h-[250px] md:h-[300px] md:w-[400px]"
+              className="object-cover w-[250px] h-[250px] md:h-[300px] md:w-[300px]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          
           </div>
         </div>
 
         {/* Kebab Section */}
-        <div className="flex-1 md:max-w-sm max-w-full text-center">
-          <div className="relative overflow-hidden rounded-lg shadow-lg">
+        <div className="flex-1  md:max-w-[330px] max-w-full text-center">
+          <div className="relative overflow-hidden ">
             <Image
               src={Img3}
               alt="Kebab"
               width={300}
               height={200}
-              className="object-cover w-[250px] h-[250px] md:h-[300px] md:w-[400px]"
+              className="object-cover w-[250px] h-[250px] md:h-[300px] md:w-[300px]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            
           </div>
         </div>
 
         {/* Shawarma Section */}
-        <div className="flex-1 md:max-w-sm max-w-full text-center">
-          <div className="relative overflow-hidden rounded-lg shadow-lg">
+        <div className="flex-1  md:max-w-[330px] max-w-full text-center">
+          <div className="relative overflow-hidden ">
             <Image
               src={Img4}
               alt="Shawarma"
               width={300}
               height={200}
-              className="object-cover w-[250px] h-[250px] md:h-[300px] md:w-[400px]"
+              className="object-cover w-[250px] h-[250px] md:h-[300px] md:w-[300px]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            
           </div>
         </div>
       </div>

@@ -9,8 +9,8 @@ const Page = () => {
     <div>
       <MenuSection1 />
       <MenuSection2/>
-      <MenuSection3/>
-      <Section6/>
+      {/* <MenuSection3/> */}
+      {/* <Section6/> */}
     </div>
   );
 };

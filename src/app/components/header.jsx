@@ -21,16 +21,19 @@ const Header = () => {
       {/* Header */}
       <div className="bg-white shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-center h-20 gap-36">
             {/* Logo Section */}
             <div className="">
-              <Image className="hidden md:block h-[60px] w-[60px]" src={Img} alt="logo" />
+              <Image
+                className="hidden md:block h-[60px] w-[60px]"
+                src={Img}
+                alt="logo"
+              />
               <Image className="block md:hidden" src={Img1} alt="Mobile logo" />
-
             </div>
 
             {/* Navigation Menu for desktop */}
-            <nav className="hidden md:flex items-center space-x-2">
+            <nav className="hidden md:flex items-center space-x-2 text-[12px] font-normal">
               <a
                 href="/"
                 className={`${baseLink} ${
@@ -82,7 +85,7 @@ const Header = () => {
             </nav>
 
             {/* Mobile Menu Button */}
-            <div className="md:hidden">
+            <div className="md:hidden relative z-[99999]">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="text-black hover:text-orange-100 transition-colors focus:outline-none"

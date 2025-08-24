@@ -51,7 +51,7 @@ const CateringSection3 = () => {
 
   return (
     <div
-      className="min-h-screen bg-gray-800 text-white p-4 md:p-8 "
+      className="min-h-screen relative bg-gray-800 text-white p-4 md:p-8 bg-center bg-cover"
       style={{
         backgroundImage: `url(${Img.src})`,
         fontFamily: "unbounded",

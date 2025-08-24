@@ -19,8 +19,8 @@ const Footer = () => {
         {/* Main heading */}
         <div className="text-center mb-16">
           <h1 className="text-lg md:text-2xl lg:text-3xl  text-white leading-tight max-w-4xl mx-auto">
-            Memorable Moments Start with Our{" "}
-            <br className="hidden md:block"></br> Professional Service
+         From our slow-roasted Yemeni Mandi to our authentic Turkish Adana Kebab
+          
           </h1>
         </div>
 
